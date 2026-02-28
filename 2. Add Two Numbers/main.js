@@ -14,7 +14,7 @@ var addTwoNumbers = function (l1, l2) {
 
     let sum = val1 + val2 + carry;
     let digit = sum % 10;
-    carry = Math.floor(digit / 10);
+    carry = Math.floor(sum / 10);
 
     current.next = new ListNode(digit);
     current = current.next;
